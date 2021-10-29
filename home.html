@@ -10,6 +10,9 @@
     <!--using FontAwesome=====================================-->
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/bootstrap.css">
+    <!--aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- jQuery library -->
@@ -62,7 +65,7 @@ background-repeat: no-repeat;">
 
     <div class="container" >
       <div class="row gy-4">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" style="background-image:url(assets/background.jpg);">
           <h1 style="color: white;">An Amazing Place to create an satellite</h1>
           <h2 style="color: white;">We are team to help you learn and Build a Satellite</h2>
           
@@ -84,12 +87,12 @@ background-repeat: no-repeat;">
 
     <!--Satellite img & info-->
    <u> <h1 style="color: white; text-align: center;padding-top: 4vw;">Learn About Satellite</h1></u>
-    <div class="container d-flex justify-content-between mt-4 mb-6 align cp">
+    <div data-aos="fade-right" class="container d-flex justify-content-between mt-4 mb-6 align cp">
       
         <img style="margin-right: 2vw; padding-top: 4vw;" height="520vw" width="520vw" src="assets/satellitemain1.jpg" alt="" class="d-flex justify-content-center mt-5 image order-1">
-        <div class="d-flex mt-5 pt-5 info order-2">
+        <div data-aos="fade-left" class="d-flex mt-5 pt-5 info order-2">
             <div class="card text-center" style="width: 543px; background-image:url(assets/bg1.jpg); height: 529px;">
-                <div class="card-body">
+                <div  class="card-body">
                   <h5 class="card-title mt-5" style="color: white;">What is a Satellite</h5>
                   <p class="card-text mt-3" style="color: white;">
                     A satellite is a moon, planet or machine that orbits a planet or star. For example,
@@ -108,18 +111,21 @@ background-repeat: no-repeat;">
 <!--Satellite img & info ends-->
 
 <!--video1-->
+<div data-aos="fade-right">
 <h1 style="color: white; margin-left: 2vw;">What is satellite?<br>How it Works?</h1>
 <div style="margin-left: 2vw;">
   <iframe width="799" height="473" src="https://www.youtube.com/embed/ror4P1UAv_g"></iframe>
+  </div>
 </div>
 
 <!-- video2 ends-->
 
 <!--video2-->
+<div data-aos="fade-left">
 <h1 style="color: white; margin-left: 70vw; margin-top: 2vw;">How a Satellite is Build?</h1>
 <div style="margin-left: 44vw;">
   <iframe width="799" height="473" src="https://www.youtube.com/embed/fft0IWOwx9s"></iframe>
-  
+  </div>
 </div>
 
 <!-- video1 ends-->
@@ -127,16 +133,14 @@ background-repeat: no-repeat;">
 
     <!--Sign-up/sign-in-->
 
-    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    <div  class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true" >
   <div class="modal-dialog" role="document" style="max-width: 800px;" >
 
     
-      <div class="modal-content" style="padding-left: 4vw; background-image: url('bg1.jpg');">
+      <div class="modal-content" style="padding-left: 4vw; background-image: url('assets/bg1.jpg');">
         
-
-      
-      <div class="modal-header text-left" style="margin-left: 2vw; ">
+      <div class="modal-header text-left" style="margin-left: 2vw;">
         
         <h4 class="modal-title w-100 font-weight-bold" style="color: white;">Create account</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -160,10 +164,7 @@ background-repeat: no-repeat;">
         <div class="modal-footer d-flex justify-content-center">
           <button class="btn btn-primary btn-lg align-self-stretch" style="border-radius: 2vw; width: 20vw; font-size: small;">Create Account</button>
         
-          <hr id="hrline2"> <button id="facebook" class="align-self-stretch"><img id="facebook1" src="https://image.flaticon.com/icons/svg/174/174848.svg">Facebook</button> 
-          <button id="google" class="align-self-stretch">
-            <img id="google1" src="https://image.flaticon.com/icons/svg/281/281764.svg">Google</button>
-        </div>
+          </div>
 
       </div>
         <div class="rightpart">
@@ -227,6 +228,8 @@ background-repeat: no-repeat;">
     </div>
   </div>
 </div>
+<h1 style="color: white;margin-left: 6vw;">Vist our shop To buy amazing Products, Books, T-Shirts and <br>
+  Learn to build a stellite on you own!</h1>
 <!--==footer=================================================================-->
 <footer style="background-image: url(assets/earth1.jpg);
 background-position: center; background-repeat: no-repeat; background-size: 100%;">
@@ -250,23 +253,13 @@ background-position: center; background-repeat: no-repeat; background-size: 100%
 
 
 
-
-      <!--footer-menu---------------------------------------->
-      
-          <!--footer-menu-box----->
-          
-
-          <!--footer-menu-box----->
-          
-          <!--footer-menu-box----->
-          
       </div>
 
 
    
   </div>
   </footer>
-  <span class="copyright">Copyright 2021 - space_store</span>
+  <span style="color: white; background-color: black;" class="copyright">Copyright 2021 - space_store</span>
     
   
       
@@ -275,7 +268,13 @@ background-position: center; background-repeat: no-repeat; background-size: 100%
         function myFunction(x) {
           x.classList.toggle("change");
         }
+        //aos data
         </script>  
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init();
+          </script>
+        
 </body>
 </html>
 

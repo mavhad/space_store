@@ -8,8 +8,11 @@
     <link rel="stylesheet" type="text/css" href="assets/style.css"/>
     <!--fav-icon==============================================-->
     <link rel="shortcut icon" href="images/fav-icon.png"/>
+    <!--aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--using FontAwesome=====================================-->
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="addtocart.js"></script>
     </head>
     <body>
          <!--==navigation-bar==============================================-->
@@ -37,8 +40,9 @@
                 <!--search-->
                 <a href="#" class="search"><i class="fas fa-search" style="font-size:26px;color:white"></i></a>
                 <!--cart---->
-                <a href="#" class="cart"><i class="fa fa-shopping-cart" style="font-size:26px;color:white"></i></i></a>
-                
+                <ul class="navbar-right">
+                    <li><a href="#" id="cart" style="color: red;"><i style="color: white;" class="fa fa-shopping-cart"></i> Cart <span class="badge">3</span></a></li>
+                  </ul>
             </div>
         </nav>
         <!--main===============================================================-->
@@ -72,7 +76,7 @@
 
         <section id="main">
         <!--main-content----------------------------->
-        <div class="main-content">
+        <div data-aos="flip-right" class="main-content">
             <!--text------------>
             <div class="main-text">
                 <span>Store</span>
@@ -88,7 +92,7 @@
     <!--==Feature=product===============================================================-->
     <section id="feature-product">
         <h1 style="color: white;">Feature Product</h1>
-        <div class="feature-product-container">
+        <div data-aos="flip-up" class="feature-product-container">
         
             <!--box-1---------------------->
             <div class="feature-product-box">
@@ -104,8 +108,8 @@
                         
                     </div>
                     <!--cart-->
-                    <div class="cart-like" style="margin-top: 1vw;">
-                        <a href="#"><i style="color: white;" class="fas fa-shopping-cart"></i></a>
+                    <div id="title" class="cart-like" style="margin-top: 1vw;">
+                        <a onclick="addToCart(item1)"><i style="color: white;" class="fas fa-shopping-cart"></i></a>
                         
                     </div>
                     
@@ -125,8 +129,8 @@
                         
                     </div>
                     <!--cart-->
-                    <div class="cart-like" style="margin-top: 1vw;">
-                        <a href="#"><i style="color: white;" class="fas fa-shopping-cart"></i></a>
+                    <div id="title" class="cart-like" style="margin-top: 1vw;">
+                        <a onclick="addToCart(item2)"><i style="color: white;" class="fas fa-shopping-cart"></i></a>
                         
                     </div>
                     
@@ -167,8 +171,8 @@
                         
                     </div>
                     <!--cart-->
-                    <div class="cart-like" style="margin-top: 1vw;">
-                        <a href="#"><i style="color: white;" class="fas fa-shopping-cart"></i></a>
+                    <div id="title" class="cart-like" style="margin-top: 1vw;">
+                        <a onclick="addToCart(item3)"><i style="color: white;" class="fas fa-shopping-cart"></i></a>
                         
                     </div>
                     
@@ -211,8 +215,8 @@
                             
                         </div>
                         <!--cart-->
-                        <div class="cart-like" style="margin-top: 1vw;">
-                            <a href="#"><i style="color: white;" class="fas fa-shopping-cart"></i></a>
+                        <div id="title" class="cart-like" style="margin-top: 1vw;">
+                            <a onclick="addToCart(item4)"><i style="color: white;" class="fas fa-shopping-cart"></i></a>
                             
                         </div>
                         
@@ -425,7 +429,19 @@
              
             </div>
             </footer>
-            <span class="copyright">Copyright 2021 - space_store</span>
-        
+            <span style="color: white; background-color: black;" class="copyright">Copyright 2021 - space_store</span>
+           <script> (function(){
+ 
+                $("#cart").on("click", function() {
+                  $(".shopping-cart").fadeToggle( "fast");
+                });
+                
+              })(); 
+            </script> 
+              <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+              <script>
+                AOS.init();
+              </script>
+            
     </body>
     </html>
