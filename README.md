@@ -32,7 +32,7 @@ This Would be helpfull for users to understand the devices or parts which are us
 
 Now this is a Footer.
 
-![](home4.PNG)
+![](footer.PNG)
 
 
 Signin/signup
