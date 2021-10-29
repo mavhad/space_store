@@ -1050,5 +1050,8 @@ footer{
           transform: translateY(-10px);
         }
       }
-    
+      .navbar-right {
+        float: right;
+      }
+      
 	
