@@ -34,12 +34,27 @@ Now this is a Footer.
 
 ![](home4.PNG)
 
+
 Signin/signup
 
 popup effect
 
 ![](signin.PNG)
 ![](signup.PNG)
+
+<b>Shop page</b>
+I have used 3-d Carousel Effect for viewing the products we have.
+
+![](shope1.PNG)
+
+used some animation effect to give a small overview about the products, books we have.
+
+![](shope2.PNG)
+
+And Added Featured Products.
+
+![](shop3.PNG)
+
 
 
 
