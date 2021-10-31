@@ -56,5 +56,10 @@ And Added Featured Products.
 ![](shop3.PNG)
 
 
+Created cart So when we Click on cart option it gets collected in cart on the right side of the page.
+
+![](ss/Cart.PNG)
+
+
 
 
