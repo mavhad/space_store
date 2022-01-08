@@ -2,7 +2,7 @@
 Web Development problem statement and rule book
 
 Please visit this website!
-Website Link - https://stupefied-noether-c9c672.netlify.app/home
+Website Link - https://space-store35.netlify.app/
 
 For Design - HTML, CSS, Javascript<br>
 For Animation - Aos and Javascript<br>
